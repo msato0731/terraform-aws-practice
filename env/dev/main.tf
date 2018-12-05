@@ -56,7 +56,7 @@ module "ec2" {
 
   ami                 = "ami-da9e2cbc"
   instance_type       = "t2.micro"
-  key_name            = "syayou_mykey20180629"
+  key_name            = "mykey"
   public_subnets      = "${module.vpc.public_subnets}"
   web_sg_id           = "${module.securitygroup.web_sg_id}"
   associate_public_ip = "true"
